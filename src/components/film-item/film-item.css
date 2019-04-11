@@ -1,0 +1,27 @@
+.film-item-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+    border: 2px solid dimgray;
+    width: 240px;
+    height: 300px;
+    margin: 20px 20px 20px 20px;
+    font-family: 'Raleway', sans-serif;
+    -webkit-box-shadow: 9px 10px 27px 0px rgba(0,0,0,0.54);
+    -moz-box-shadow: 9px 10px 27px 0px rgba(0,0,0,0.54);
+    box-shadow: 9px 10px 27px 0px rgba(0,0,0,0.54);
+    transition: border-color 0.6s, box-shadow 0.5s ;
+}
+
+.film-item-container:hover{
+   border-color: white;
+    box-shadow: 0 0 0 0 rgba(0,0,0,0.54);
+}
+
+.film-image{
+    width: 150px;
+    height:250px;
+    margin-bottom: 10px;
+}
