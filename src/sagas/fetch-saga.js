@@ -1,0 +1,26 @@
+import axios from 'axios';
+import {START_FETCHING_FILMS, FILMS_TO_STORE } from '../actions/request-actions';
+import { takeEvery, put, call } from 'redux-saga/effects';
+
+
+function getPosts() {
+    return axios({
+        url: 'https://obscure-depths-62229.herokuapp.com/api/v1/films',
+        method: 'GET',
+    });
+}
+
+function* fetchDataWorker(){
+    const response = yield call(getPosts);
+    console.log(response.data);
+    const films = response.data;
+    yield put({
+        type: FILMS_TO_STORE,
+        films
+    });
+}
+
+export default function* watchFetchData(){
+    yield takeEvery(START_FETCHING_FILMS, fetchDataWorker);
+}
+

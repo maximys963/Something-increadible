@@ -1,0 +1,22 @@
+.add-form-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.add-form-group{
+    width: 30%;
+    height: 480px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px solid lightgray;
+}
+.add-form{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.add-actors-area{
+    max-height: 70px;
+}
