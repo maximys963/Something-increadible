@@ -6,7 +6,7 @@
 }
 .add-form-group{
     width: 30%;
-    height: 480px;
+    height: 320px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -19,4 +19,13 @@
 }
 .add-actors-area{
     max-height: 70px;
+}
+.add-input,
+.add-select,
+.add-actors-area{
+    width: 80%;
+    margin-top: 20px;
+}
+.add-button{
+    margin-top: 20px;
 }

@@ -13,7 +13,9 @@ function getPosts() {
 function* fetchDataWorker(){
     const response = yield call(getPosts);
     console.log(response.data);
-    const films = response.data;
+    const films = response.data.map((elem) => (
+        {...elem, visible: true}
+    ));
     yield put({
         type: FILMS_TO_STORE,
         films

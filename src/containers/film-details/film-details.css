@@ -1,3 +1,25 @@
 .cartoon-details-container{
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     width: 60%;
+}
+.cartoon-details-group{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 300px;
+    border: 1px solid lightgray;
+    padding: 20px 20px 20px 20px;
+}
+.actors-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.actor-name{
+    margin: 0 5px 0 0;
+
 }

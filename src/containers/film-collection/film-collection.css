@@ -11,15 +11,9 @@
     flex-direction: column;
     justify-content: flex-start;
 }
-.instrument-panel{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-.search-input{
-    width: 30%;
+.sort-button{
     margin-left: 10px;
-    margin-right: 10px;
+}
+.film-spin{
+    margin-top: 20px;
 }

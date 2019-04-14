@@ -1,10 +1,12 @@
 import React from 'react';
 import { connect} from 'react-redux';
 import * as actions from '../../action-creators/add-form-ac';
-import { TextArea, Button, Label, Form} from 'semantic-ui-react';
+import { Select, Input, Button,  } from 'antd';
 import './add-film-form.css';
 
 const AddFilmForm = (props) => {
+    const Option = Select.Option;
+    const { TextArea } = Input;
     const { addFilm,
         changeFilmName,
         changeFilmYear,
@@ -29,43 +31,36 @@ const AddFilmForm = (props) => {
     return(
         <div className='add-form-container'>
             <div className='add-form-group'>
-                <Form className='add-form'>
-                    <Form.Field>
-                        <input
-                            value={name}
-                            placeholder='Film name'
-                            onChange={(e) => changeFilmName(e.target.value)}
-                        />
-                        <Label pointing>Please write film name</Label>
-                    </Form.Field>
-                    <Form.Field>
-                        <input
-                            value={year}
-                            placeholder='Year'
-                            onChange={(e) => changeFilmYear(e.target.value)}
-                        />
-                        <Label pointing>Please write year</Label>
-                    </Form.Field>
-                    <Form.Field>
-                        <input
-                            value={format}
-                            placeholder='Format'
-                            onChange={(e) => changeFilmFormat(e.target.value)}
-                        />
-                        <Label pointing>Please write format</Label>
-                    </Form.Field>
-                    <Form.Field>
-                        <TextArea
-                            value={actors}
-                            className='add-actors-area'
-                            placeholder='Actors'
-                            onChange={(e) => changeFilmActors(e.target.value)}
-                        />
-                        <Label pointing>Please write actors</Label>
-                    </Form.Field>
-                </Form>
+                <Input
+                    className='add-input'
+                    value={name}
+                    placeholder='Film name'
+                    onChange={(e) => changeFilmName(e.target.value)}
+                />
+                <Input
+                    className='add-input'
+                    value={year}
+                    placeholder='Year'
+                    onChange={(e) => changeFilmYear(e.target.value)}
+                />
+                <Select
+                    className='add-select'
+                    placeholder='Format'
+                    onSelect={(value) => changeFilmFormat(value)}>
+                    <Option value='DVD'>DVD</Option>
+                    <Option value='Blu-Ray'>Blu-Ray</Option>
+                    <Option value='VHS'>VHS</Option>
+                </Select>
+                <TextArea
+                    className='add-actors-area'
+                    value={actors}
+                    rows={4}
+                    placeholder='Actors'
+                    onChange={(e) => changeFilmActors(e.target.value)}
+                />
                 <Button
-                    color='green'
+                    className='add-button'
+                    type='primary'
                     onClick={() => prepareDataToRequest()}>Add film</Button>
             </div>
         </div>

@@ -6,7 +6,7 @@
     cursor: pointer;
     border: 2px solid dimgray;
     width: 240px;
-    height: 320px;
+    height: 350px;
     margin: 20px 20px 20px 20px;
     font-family: 'Raleway', sans-serif;
     -webkit-box-shadow: 9px 10px 27px 0px rgba(0,0,0,0.54);
@@ -23,6 +23,13 @@
     width: 150px;
     height:250px;
     margin-bottom: 10px;
+}
+.film-title{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    width: 140px;
 }
 .delete-icon-container{
     width: 100%;

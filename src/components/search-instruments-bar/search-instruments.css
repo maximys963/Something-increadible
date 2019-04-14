@@ -1,0 +1,13 @@
+.instrument-panel{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    align-self: center;
+}
+.search-input{
+    width: 30%;
+    margin-left: 10px;
+    margin-right: 10px;
+}

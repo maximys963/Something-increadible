@@ -2,7 +2,7 @@
 import  React from 'react';
 
 const MockPage = ({currentPage}) =>(
-    <div>
+    <div style={{width: '100%', display: 'flex', justifyContent: 'center'}}>
         {`this is mock page ${currentPage}`}
     </div>
 );

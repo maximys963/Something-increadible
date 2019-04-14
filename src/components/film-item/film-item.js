@@ -3,7 +3,7 @@ import React from 'react';
 import {connect} from 'react-redux';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import * as actions from '../../action-creators/request-ac';
+import * as actions from '../../action-creators/video-collection-ac';
 import './film-item.css';
 
 const FilmItem = (props) =>{
@@ -19,7 +19,7 @@ const FilmItem = (props) =>{
             </div>
             <Link to={`/cartoons/${id}`}>
                 <img className='film-image' src={require('../../assets/18d9d66d9715841e4e19fa5c5fb02ab1.jpg')}/>
-                <h4>{title}</h4>
+                <h4 className='film-title'>{title}</h4>
             </Link>
         </div>
     );};
