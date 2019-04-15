@@ -2,27 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="76d2cec0-74f0-4d20-9427-611797f1672f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/action-creators/video-collection-ac.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/action-creators/video-collection-ac.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actions/request-actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/request-actions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/18d9d66d9715841e4e19fa5c5fb02ab1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/main.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/601f348b4a7a716182404f832d9f012e.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/delete.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/film-item/film-item.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/film-item/film-item.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/menu/menu.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/menu/menu.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/search-instruments-bar/search-instruments.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/search-instruments-bar/search-instruments.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/search-instruments-bar/search-instruments.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/search-instruments-bar/search-instruments.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/add-film-form/add-film-form.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/add-film-form/add-film-form.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/add-film-form/add-film-form.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/add-film-form/add-film-form.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/film-collection/film-collection.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/film-collection/film-collection.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/film-collection/film-collection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/film-collection/film-collection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/film-details/film-details.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/film-details/film-details.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/main-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/main-reducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sagas/add-file-films-saga.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/sagas/add-file-films-saga.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sagas/add-film-saga.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/sagas/add-film-saga.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sagas/delete-film-saga.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/sagas/delete-film-saga.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sagas/fetch-saga.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/sagas/fetch-saga.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -36,10 +16,13 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/components/search-instruments-bar/search-instruments.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="176">
+                <caret line="11" column="211" selection-start-line="11" selection-start-column="211" selection-end-line="11" selection-end-column="211" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -108,6 +91,7 @@
         <option value="$PROJECT_DIR$/src/components/search-instruments-bar/search-instruments.js" />
         <option value="$PROJECT_DIR$/src/containers/film-collection/film-collection.css" />
         <option value="$PROJECT_DIR$/src/components/search-instruments-bar/search-instruments.css" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -135,25 +119,6 @@
               <item name="something-increadible" type="b2602c69:ProjectViewProjectNode" />
               <item name="something-increadible" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="something-increadible" type="b2602c69:ProjectViewProjectNode" />
-              <item name="something-increadible" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="something-increadible" type="b2602c69:ProjectViewProjectNode" />
-              <item name="something-increadible" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="search-instruments-bar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="something-increadible" type="b2602c69:ProjectViewProjectNode" />
-              <item name="something-increadible" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="containers" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -202,12 +167,12 @@
       <workItem from="1555082632117" duration="29327000" />
       <workItem from="1555234898850" duration="17541000" />
       <workItem from="1555265965555" duration="6997000" />
-      <workItem from="1555309803161" duration="16520000" />
+      <workItem from="1555309803161" duration="18249000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76804000" />
+    <option name="totallyTimeSpent" value="78533000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -631,6 +596,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="224">
           <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="176">
+            <caret line="11" column="211" selection-start-line="11" selection-start-column="211" selection-end-line="11" selection-end-column="211" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
