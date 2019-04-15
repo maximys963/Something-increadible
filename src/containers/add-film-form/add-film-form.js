@@ -1,12 +1,14 @@
 import React from 'react';
 import { connect} from 'react-redux';
+import { Select, Input, Button } from 'antd';
 import * as actions from '../../action-creators/add-form-ac';
-import { Select, Input, Button,  } from 'antd';
 import './add-film-form.css';
+import PropTypes from 'prop-types';
 
 const AddFilmForm = (props) => {
     const Option = Select.Option;
     const { TextArea } = Input;
+
     const { addFilm,
         changeFilmName,
         changeFilmYear,
@@ -28,6 +30,7 @@ const AddFilmForm = (props) => {
         };
         addFilm(requestData);
     };
+
     return(
         <div className='add-form-container'>
             <div className='add-form-group'>
@@ -65,6 +68,18 @@ const AddFilmForm = (props) => {
             </div>
         </div>
     );
+};
+
+AddFilmForm.propTypes = {
+    addFilm: PropTypes.func,
+    changeFilmName: PropTypes.func,
+    changeFilmYear: PropTypes.func,
+    changeFilmFormat: PropTypes.func,
+    changeFilmActors: PropTypes.func,
+    name: PropTypes.string,
+    year: PropTypes.string,
+    format: PropTypes.string,
+    actors: PropTypes.string
 };
 
 const mapStateToProps = (state) => ({

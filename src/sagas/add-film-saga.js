@@ -11,8 +11,7 @@ function FileFilms(filmData){
 }
 
 function* FileFilmsWorker(action){
-    const response = yield call(FileFilms, action.filmData);
-    console.log(response);
+    yield call(FileFilms, action.filmData);
 }
 
 export default function* watchFileFilms(){

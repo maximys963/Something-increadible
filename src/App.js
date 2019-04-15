@@ -26,7 +26,6 @@ const App = () => (
                 <Route
                     path='/pages/:current'
                     render={({match}) =>{
-                        console.log(match);
                         const { current } = match.params;
                         return <MockPage currentPage={current}/>;
                     }}/>

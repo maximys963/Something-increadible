@@ -2,31 +2,53 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import { Link } from 'react-router-dom';
-import PropTypes from 'prop-types';
 import * as actions from '../../action-creators/video-collection-ac';
+import PropTypes from 'prop-types';
 import './film-item.css';
 
 const FilmItem = (props) =>{
-    const {title, id, deleteFilm} = props;
+    const {title,
+        id,
+        deleteFilm,
+        deleteStatus,
+        changeDeleteStatus} = props;
+
+    const toggleDeleteItem = (id) => {
+        changeDeleteStatus({id, status: 'waiting'});
+        deleteFilm(id);
+    };
+
     return(
         <div className='film-item-container'>
             <div className='delete-icon-container'>
                 <img
-                    onClick={() => deleteFilm(id)}
+                    alt='delete-icon'
+                    onClick={() => toggleDeleteItem(id)}
                     className='delete-film'
                     src={require('../../assets/icons/clear.svg')}
                 />
             </div>
             <Link to={`/cartoons/${id}`}>
-                <img className='film-image' src={require('../../assets/18d9d66d9715841e4e19fa5c5fb02ab1.jpg')}/>
-                <h4 className='film-title'>{title}</h4>
+                <img className='film-image'
+                    alt='placeholder-img'
+                    src={ deleteStatus === 'waiting'
+                        ? require('../../assets/delete.jpg')
+                        : require('../../assets/main.jpg')
+                    }
+                />
+                <h4 className='film-title'>
+                    {deleteStatus === 'waiting' ? 'waiting' : title}
+                </h4>
             </Link>
         </div>
     );};
 
 FilmItem.propTypes = {
     title: PropTypes.string,
-    onClickCartoon: PropTypes.func
+    id: PropTypes.string,
+    deleteFilm: PropTypes.func,
+    deleteStatus: PropTypes.string,
+    changeDeleteStatus: PropTypes.func
 };
 
 export default connect(null, actions)(FilmItem);

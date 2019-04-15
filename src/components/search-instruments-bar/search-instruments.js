@@ -1,14 +1,15 @@
+/* eslint-disable no-unused-vars */
 import React from 'react';
 import { connect } from 'react-redux';
 import { Select, Button, Input } from 'antd';
 import * as search_actions from '../../action-creators/search-ac';
 import * as sort_actions from '../../action-creators/sort-data-ac';
+import PropTypes from 'prop-types';
 import './search-instruments.css';
 
 const SearchInstruments = (props) => {
     const Option = Select.Option;
-    const {
-        sortStatus,
+    const { sortStatus,
         method,
         inputValue,
         uploadFile,
@@ -39,7 +40,9 @@ const SearchInstruments = (props) => {
 
     return(
         <div className='instrument-panel'>
-            <input type='file'
+            <input
+                className='upload-input'
+                type='file'
                 onChange={(e) => uploadFile(e.target)}/>
             <Input
                 value={inputValue}
@@ -48,6 +51,7 @@ const SearchInstruments = (props) => {
                 onChange={(e) => onInputChange(e.target.value)}
             />
             <Select
+                className='select-method'
                 onSelect={(value) => changeSearchMethod(value)}
                 defaultValue='by_name'>
                 <Option value='by_name'>
@@ -57,7 +61,9 @@ const SearchInstruments = (props) => {
                     by actor
                 </Option>
             </Select>
-            <Button className='sort-button'
+            <Button
+                htmlType='button'
+                id='sort-button'
                 onClick={() => sortToggle()}>
                 { sortStatus === 'not_sorted' || sortStatus === 'sorted_za'
                     ? 'Sort A-Z'
@@ -65,6 +71,19 @@ const SearchInstruments = (props) => {
             </Button>
         </div>
     );
+};
+
+SearchInstruments.propTypes = {
+    sortStatus: PropTypes.string,
+    method: PropTypes.string,
+    inputValue: PropTypes.string,
+    uploadFile: PropTypes.func,
+    searchByName: PropTypes.func,
+    searchByActor: PropTypes.func,
+    changeSearchMethod: PropTypes.func,
+    inputChangesToStore: PropTypes.func,
+    sortByAz: PropTypes.func,
+    sortByZa: PropTypes.func
 };
 
 const mapStateToProps = (state) => ({

@@ -3,19 +3,17 @@ import React, {Component} from 'react';
 import { connect } from 'react-redux';
 import './film-details.css';
 import { Spin } from 'antd';
+import PropTypes from 'prop-types';
 import * as actions from '../../action-creators/video-collection-ac';
 
 class FilmDetails extends Component{
-    constructor(props){
-        super(props);
-    }
+
     componentDidMount() {
         this.props.startFechingData();
     }
 
     render(){
         const {itemId, data} = this.props;
-        console.log(itemId);
         return(
             <div className='cartoon-details-container'>
                 {data.length === 0
@@ -32,6 +30,11 @@ class FilmDetails extends Component{
                             </div>)))}
             </div>);}
 }
+
+FilmDetails.propTypes = {
+    itemId: PropTypes.string,
+    data: PropTypes.array
+};
 
 const mapStateToProps = (state) => ({
     data: state.mainReducer
