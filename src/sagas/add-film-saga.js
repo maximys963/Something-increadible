@@ -1,6 +1,6 @@
 import axios from 'axios';
 import { ADD_FILM } from '../actions/request-actions';
-import { takeEvery, call } from 'redux-saga/effects';
+import { takeEvery, call, put } from 'redux-saga/effects';
 
 function FileFilms(filmData){
     return axios({
@@ -12,6 +12,7 @@ function FileFilms(filmData){
 
 function* FileFilmsWorker(action){
     yield call(FileFilms, action.filmData);
+    yield put({type: 'START_FETCHING_FILMS'});
 }
 
 export default function* watchFileFilms(){
