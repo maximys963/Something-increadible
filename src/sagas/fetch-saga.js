@@ -5,7 +5,7 @@ import { takeEvery, put, call } from 'redux-saga/effects';
 
 function getPosts() {
     return axios({
-        url: 'https://obscure-depths-62229.herokuapp.com/api/v1/films',
+        url: 'http://localhost:3000/api/v1/films',
         method: 'GET',
     });
 }

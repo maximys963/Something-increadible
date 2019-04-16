@@ -4,7 +4,7 @@ import { takeEvery, call, put } from 'redux-saga/effects';
 
 function deleteFilm(id){
     return axios({
-        url: `https://obscure-depths-62229.herokuapp.com/api/v1/film/${id}`,
+        url: `http://localhost:3000/api/v1/film/${id}`,
         method: 'DELETE'});
 }
 
