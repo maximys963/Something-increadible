@@ -1,10 +1,11 @@
 import axios from 'axios';
 import {ADD_FILE_FILMS} from '../actions/request-actions';
 import { takeEvery, call, put } from 'redux-saga/effects';
+import {port} from '../portConfig';
 
 function addFilm(element){
     return axios({
-        url: 'http://localhost:3000/api/v1/films/fromFile',
+        url: `http://localhost:${port}/api/v1/films/fromFile`,
         method: 'POST',
         data: element.files[0],
         headers: {

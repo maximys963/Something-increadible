@@ -1,11 +1,12 @@
 import axios from 'axios';
 import {START_FETCHING_FILMS, FILMS_TO_STORE } from '../actions/request-actions';
 import { takeEvery, put, call } from 'redux-saga/effects';
+import { port} from '../portConfig';
 
 
 function getPosts() {
     return axios({
-        url: 'http://localhost:3000/api/v1/films',
+        url: `http://localhost:${port}/api/v1/films`,
         method: 'GET',
     });
 }

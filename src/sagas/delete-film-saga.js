@@ -1,10 +1,11 @@
 import axios from 'axios';
 import { DELETE_FILM, DELETE_FILM_FROM_STORE, CHANGE_DELETE_STATUS} from '../actions/request-actions';
 import { takeEvery, call, put } from 'redux-saga/effects';
+import { port } from '../portConfig';
 
 function deleteFilm(id){
     return axios({
-        url: `http://localhost:3000/api/v1/film/${id}`,
+        url: `http://localhost:${port}/api/v1/film/${id}`,
         method: 'DELETE'});
 }
 
