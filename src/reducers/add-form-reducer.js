@@ -2,14 +2,26 @@ import {CHANGE_FILM_NAME,
     CHANGE_FILM_YEAR,
     CHANGE_FILM_FORMAT,
     CHANGE_FILM_ACTORS,
-    VALIDATE_INPUTS} from '../actions/add-form-actions';
+    CHANGE_ADD_STATUS,
+    VALIDATE_INPUTS,
+} from '../actions/add-form-actions';
+
+import {NAME_VALIDATION,
+    ACTORS_VALIDATION,
+    YEAR_VALIDATION
+} from '../actions/add-form-validation';
 
 const initialState = {
+    addingStatus: 'no-status',
     name: '',
     year: '',
-    format: '',
+    format: 'DVD',
     actors: '',
-    valid: null
+    formValidated: null,
+    nameValid: null,
+    yearValid: null,
+    actorsValid: null,
+    formatValid: null,
 };
 
 export const formReducer = (state = initialState, action) =>{
@@ -24,7 +36,15 @@ export const formReducer = (state = initialState, action) =>{
         return({...state, actors: action.actors});
     case VALIDATE_INPUTS:
         return({...state, valid: action.result});
-    default :
+    case YEAR_VALIDATION:
+        return({...state, yearValid: action.bool});
+    case NAME_VALIDATION:
+        return({...state, nameValid: action.bool});
+    case ACTORS_VALIDATION:
+        return({...state, actorsValid: action.bool});
+    case CHANGE_ADD_STATUS:
+        return({...state, addingStatus: action.status });
+    default:
         return state;
     }
 };

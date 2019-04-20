@@ -31,3 +31,6 @@
 .add-button{
     margin-top: 20px;
 }
+.validation-error{
+    color: tomato;
+}

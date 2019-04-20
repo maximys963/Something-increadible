@@ -19,9 +19,9 @@ export const mainReducer = (state = [], action) =>{
         return [...state.slice(0, index), ...state.slice(index +1)];
     case SEARCH_BY_ACTOR:
         const searchElementsByActor = state.map(film =>
-            film.actors.join(' ').toLowerCase().indexOf(action.string.toLowerCase()) === -1
-                ?{...film, visible: false}
-                :{...film, visible: true}
+            film.actors.some(elem => elem.toLowerCase().indexOf(action.string.toLowerCase()) !== -1)
+                ?{...film, visible: true}
+                :{...film, visible: false}
         );
         return[...searchElementsByActor];
     case SEARCH_BY_NAME:

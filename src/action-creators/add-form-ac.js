@@ -2,7 +2,9 @@ import {CHANGE_FILM_NAME,
     CHANGE_FILM_YEAR,
     CHANGE_FILM_FORMAT,
     CHANGE_FILM_ACTORS,
-    VALIDATE_INPUTS} from '../actions/add-form-actions';
+    VALIDATE_INPUTS,
+    CHANGE_ADD_STATUS
+} from '../actions/add-form-actions';
 import {ADD_FILM} from '../actions/request-actions';
 
 export const changeFilmName = (name) => ({
@@ -28,6 +30,11 @@ export const changeFilmActors = (actors) => ({
 export const addFilm = (filmData) => ({
     type: ADD_FILM,
     filmData
+});
+
+const changeAddStatus = (status) => ({
+    type: CHANGE_ADD_STATUS,
+    status
 });
 
 export const validateInputs = (result) => ({
