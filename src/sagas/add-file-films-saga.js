@@ -4,6 +4,7 @@ import { takeEvery, call, put } from 'redux-saga/effects';
 import {port} from '../portConfig';
 
 function addFilm(element){
+
     return axios({
         url: `http://localhost:${port}/api/v1/films/fromFile`,
         method: 'POST',
@@ -12,6 +13,7 @@ function addFilm(element){
             'Content-Type': 'text/plain'
         }
     }).then(_ => {
+        console.log('here');
         element.value = '';
         return Promise.resolve(_);
     });

@@ -2,17 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="141a5d20-fc77-40f0-978f-6c07f6ceea0c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../src/action-creators/add-form-validation-ac.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../src/actions/add-form-validation.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/action-creators/add-form-ac.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/action-creators/add-form-ac.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/actions/add-form-actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/actions/add-form-actions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/components/menu/menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/menu/menu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/containers/add-film-form/add-film-form.css" beforeDir="false" afterPath="$PROJECT_DIR$/../src/containers/add-film-form/add-film-form.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/containers/add-film-form/add-film-form.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/containers/add-film-form/add-film-form.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/reducers/add-form-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/reducers/add-form-reducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/reducers/main-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/reducers/main-reducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/sagas/add-film-saga.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/sagas/add-film-saga.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -24,7 +15,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/models/film.ts">
           <provider selected="true" editor-type-id="text-editor" />
@@ -49,7 +40,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/rest.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
+            <state relative-caret-position="448">
               <caret line="29" column="57" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="57" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
@@ -75,7 +66,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -98,11 +88,12 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.tslint" value="G:\JS\something-increadible\server\node_modules\tslint" />
@@ -132,23 +123,21 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1555784669710</updated>
-      <workItem from="1555784672180" duration="1161000" />
+      <workItem from="1555784672180" duration="1746000" />
+      <workItem from="1555832584631" duration="95000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1161000" />
+    <option name="totallyTimeSpent" value="1841000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24925596" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="TypeScript" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -159,6 +148,8 @@
       <window_info anchor="bottom" x="0" y="260" width="1366" height="208" id="Event Log" order="7" side_tool="true" type="WINDOWED" weight="0.3296355" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.3296355" />
       <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="TypeScript" order="11" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -171,15 +162,11 @@
     <entry file="file://$PROJECT_DIR$/config.ts">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/rest.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="29" column="57" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="57" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/models/film.ts">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/index.ts">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/index.ts">
       <provider selected="true" editor-type-id="text-editor">
@@ -190,11 +177,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/models/index.ts">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/models/film.ts">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/src/rest.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="29" column="57" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="57" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
   </component>
 </project>

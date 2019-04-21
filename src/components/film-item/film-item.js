@@ -11,7 +11,9 @@ const FilmItem = (props) =>{
         id,
         deleteFilm,
         deleteStatus,
-        changeDeleteStatus} = props;
+        changeDeleteStatus,
+        showDeleteConfirm,
+    } = props;
 
     const toggleDeleteItem = (id) => {
         changeDeleteStatus({id, status: 'waiting'});
@@ -23,7 +25,7 @@ const FilmItem = (props) =>{
             <div className='delete-icon-container'>
                 <img
                     alt='delete-icon'
-                    onClick={() => toggleDeleteItem(id)}
+                    onClick={() => showDeleteConfirm(() => toggleDeleteItem(id))}
                     className='delete-film'
                     src={require('../../assets/icons/clear.svg')}
                 />

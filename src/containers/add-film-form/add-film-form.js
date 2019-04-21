@@ -14,6 +14,7 @@ class AddFilmForm extends Component{
     componentDidUpdate(prevProps) {
 
         const {addingStatus,
+            changeAddStatus,
             nameValid,
             yearValid,
             actorsValid
@@ -21,6 +22,7 @@ class AddFilmForm extends Component{
 
         if(addingStatus !== prevProps.addingStatus){
             this.updateAnswer();
+            changeAddStatus('no-status');
         }
 
         if(nameValid !== prevProps.nameValid

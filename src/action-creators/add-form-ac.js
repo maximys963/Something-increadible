@@ -32,7 +32,7 @@ export const addFilm = (filmData) => ({
     filmData
 });
 
-const changeAddStatus = (status) => ({
+export const changeAddStatus = (status) => ({
     type: CHANGE_ADD_STATUS,
     status
 });

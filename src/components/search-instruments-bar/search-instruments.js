@@ -1,18 +1,19 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
 import { connect } from 'react-redux';
-import { Select, Button, Input } from 'antd';
+import { Select, Button, Input, message } from 'antd';
 import * as search_actions from '../../action-creators/search-ac';
 import * as sort_actions from '../../action-creators/sort-data-ac';
+import * as vc_actions from '../../action-creators/video-collection-ac';
 import PropTypes from 'prop-types';
 import './search-instruments.css';
 
 const SearchInstruments = (props) => {
     const Option = Select.Option;
     const { sortStatus,
+        addFileFilms,
         method,
         inputValue,
-        uploadFile,
         searchByName,
         searchByActor,
         changeSearchMethod,
@@ -35,6 +36,17 @@ const SearchInstruments = (props) => {
             sortByAz();
         }else if(sortStatus === 'sorted_az'){
             sortByZa();
+        }
+    };
+
+    const uploadFile = (target) => {
+        const nameFile = target.files[0].name;
+        const type = nameFile.slice(nameFile.length - 3, nameFile.length);
+        if(type !== 'txt'){
+            message.error('This is not appropriate file type ');
+            target.value = '';
+        }else{
+            addFileFilms(target);
         }
     };
 
@@ -94,7 +106,17 @@ const mapStateToProps = (state) => ({
 
 const mapDispatchToProps = {
     ...search_actions,
-    ...sort_actions
+    ...sort_actions,
+    ...vc_actions
+
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(SearchInstruments);
+
+
+
+
+
+
+
+
